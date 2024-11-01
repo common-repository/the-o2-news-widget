@@ -1,0 +1,140 @@
+/* style sheet o2 widget */
+
+.alpha { 
+	background:url(transparent.png); 
+	margin-bottom: 10px; 
+	padding: 5px; 
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+#o2_rss_widget .o2_rss_dark, #o2_rss_widget .o2_rss_light {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+	position: relative;
+	padding: 15px 10px 10px 10px;
+	font-size: 11px;
+	line-height: 16px;
+	
+	font-family: Fruiger, Arial, San-serif;
+}
+
+.o2_rss_dark:before, .o2_rss_dark:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.o2_rss_dark:after { clear: both; }
+.o2_rss_dark { zoom: 1; }
+
+.o2_rss_light:before, .o2_rss_light:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.o2_rss_light:after { clear: both; }
+.o2_rss_light { zoom: 1; }
+
+#o2_rss_widget .widget-title, #o2_rss_widget .widget-blogtitle {
+	color: white;
+    font-size: 1.4em;
+    height: 30px;
+	width: 36px;
+	background: url(o2_widget_top_logo.gif) no-repeat bottom left;
+	text-indent: -9999px;
+	margin-bottom: 15px;
+}
+
+#o2_rss_widget .widget-blogtitle {
+	background: url(o2_widget_top_blog.gif) no-repeat bottom left;
+	left: 48px;
+    position: absolute;
+    top: 19px;
+    width: 67px;
+}
+
+#o2_rss_widget .o2_rss_light .widget-title, #o2_rss_widget .o2_rss_light .widget-blogtitle {
+	color: #0a0060;
+	background-position: top left;
+}
+
+#o2_rss_widget .widget-title a, #o2_rss_widget .widget-blogtitle a {
+	width: 36px;
+	height: 30px;
+	display: block;
+}
+
+#o2_rss_widget .widget-blogtitle a {
+	width: 67px;
+}
+
+#o2_rss_widget .better-connected {
+	width: 148px;
+	height: 30px;	
+	background: url(o2_widget_bottom_logo.gif) no-repeat bottom left;
+	text-indent: -9999px;
+	float: right;
+}
+
+#o2_rss_widget .better-connected.ie6 {
+	background: url(o2_widget_bottom_logo.gif) no-repeat bottom left;
+}
+
+#o2_rss_widget .better-connected a {
+	width: 148px;
+	height: 30px;
+	display: block;
+}
+
+#o2_rss_widget .o2_rss_dark .better-connected {
+	background-position: top left;
+}
+
+#o2_rss_widget .o2_rss_light {
+	color: #000000;
+	border: 1px solid #d3d3d3;
+	
+	background: url(bg_light.jpg) repeat-x bottom left #ffffff;
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.2, rgb(227,227,227)),
+		color-stop(0.84, rgb(255,255,255))
+	);
+	background-image: -moz-linear-gradient(
+		center bottom,
+		rgb(227,227,227) 20%,
+		rgb(255,255,255) 84%
+	);
+}
+
+#o2_rss_widget .o2_rss_dark {
+	color: #ffffff;
+	
+	background: url(bg_dark.jpg) repeat-x top left #5daad7;
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.2, rgb(93,170,215)),
+		color-stop(0.84, rgb(10,14,57))
+	);
+	background-image: -moz-linear-gradient(
+		center bottom,
+		rgb(93,170,215) 20%,
+		rgb(10,14,57) 84%
+	);
+}
+
+#o2_rss_widget a {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#o2_rss_widget .o2_rss_dark a {
+	color: #ffffff;
+}
+
+#o2_rss_widget .o2_rss_light a {
+	color: #419eda;
+}
+
+/*cssgradients no-cssgradients*/
